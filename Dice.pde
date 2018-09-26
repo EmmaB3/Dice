@@ -21,7 +21,6 @@ void draw()
 	textAlign(CENTER);
 	textSize(50);
 	text("Total: " + sum, 250, 250);
-	System.out.println(sum);
 }
 
 void spiral(){
