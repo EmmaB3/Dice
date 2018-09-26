@@ -9,19 +9,18 @@ void setup()
 void draw()
 {
 	sum = 0;
-	for(int y = 13; y < 500; y += 25 ){
+	/*for(int y = 13; y < 500; y += 25 ){
 		for(int x = 13; x < 500; x += 25){
 			Die d = new Die(x,y);
 			d.roll();
 			d.show();
 		}
-	}
-	//spiral();
+	}*/
+	spiral();
 	fill(124, 168, 87);
 	textAlign(CENTER);
 	textSize(50);
 	text("Total: " + sum, 250, 250);
-	System.out.println(sum);
 }
 
 void spiral(){
@@ -32,8 +31,13 @@ void spiral(){
 	go up total height - 3
 	go right total length - 3
 	*/
+	//use polar coordinates??
+	//if it's on bottom nums are going down
 	for(int a = 1; a <= 20; a +=2){
-		//for(int b = 0; b < 2; b ++)
+		for(int b = 0; b < 2; b ++){
+			//for(int c = )
+			//wait maybe i'm looking at this wrong--- just see it as rows & columns
+		}
 	}
 }
 
