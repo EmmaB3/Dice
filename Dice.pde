@@ -25,8 +25,16 @@ void draw()
 }
 
 void spiral(){
-	firstLine();
-	//for(int y = 37)
+	firstLine();/*
+	go right total length
+	go down total height -1
+	go left total length - 1
+	go up total height - 3
+	go right total length - 3
+	*/
+	for(int a = 1; a <= 20; a +=2){
+		//for(int b = 0; b < 2; b ++)
+	}
 }
 
 void firstLine(){
