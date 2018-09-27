@@ -3,38 +3,27 @@ void setup()
 {
 	size(501,501);
 	noLoop();
-	background(0);
 }
 
 void draw()
 {
+	background(0);
 	sum = 0;
 	for(int y = 13; y < 500; y += 25 ){
 		for(int x = 13; x < 500; x += 25){
-			Die d = new Die(x,y);
-			d.roll();
-			d.show();
+			if(x%2 == y%2){
+				Die d = new Die(x,y);
+				d.roll();
+				d.show();
+			}
 		}
 	}
-	//spiral();
 	fill(124, 168, 87);
 	textAlign(CENTER);
 	textSize(50);
 	text("Total: " + sum, 250, 250);
 }
 
-void spiral(){
-	firstLine();/*
-	go right total length
-	go down total height -1
-	go left total length - 1
-	go up total height - 3
-	go right total length - 3
-	*/
-	for(int a = 1; a <= 20; a +=2){
-		//for(int b = 0; b < 2; b ++)
-	}
-}
 
 void firstLine(){
 	for(int x = 13; x < 500; x += 25){
@@ -43,30 +32,7 @@ void firstLine(){
 		d.show();
 	}
 }
-/*function blackSpiral(){
-    firstLine();
-    for (var a = 0; a <= 16; a +=2){
-        for (var b = 0; b < 2; b++){
-            for (var c = 0; c < 19 - a; c++){
-                paint(Color.black);
-                move();
-            }
-            paint(Color.black);
-            turnLeft();
-        }
-    }
-    move();
-    paint(Color.black);
-}
 
-function firstLine(){
-    while (frontIsClear()){
-        paint(Color.black);
-        move();
-    }
-    turnLeft();
-}
-*/
 void mousePressed()
 {
 	redraw();
