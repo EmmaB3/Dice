@@ -26,14 +26,14 @@ void draw()
 void spiral(){
 	firstLine();/*
 	go right total length
-	go down total height -1
+	0go down total height -1
 	go left total length - 1
-	go up total height - 3
+	1go up total height - 3
 	go right total length - 3
 	*/
 	//use polar coordinates??
 	//if it's on bottom nums are going down
-	for(int a = 1; a <= 20; a +=2){
+	for(int a = 0; a <= 20; a +=2){
 		for(int b = 0; b < 2; b ++){
 			//for(int c = )
 			//wait maybe i'm looking at this wrong--- just see it as rows & columns
